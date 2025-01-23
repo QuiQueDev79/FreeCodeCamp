@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Satisfaction Survey</h1>
+    <p id="description">Your opinion is important to us and we hope you enjoyed our service.</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="enter your name"></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" required placeholder="example@email.com"></label>
+      <label id="number-label" for="number">Age <input id="number" name="number" type="number" min="1" max="120" required placeholder="enter your age"></label>
+      <label for="referrer">How did you hear about us?</label>
+      <select id="dropdown">
+        <option value="0">(select one)</option>
+            <option type="radio" value="1">Social Media</option>
+            <option type="radio" value="2">Email Ads</option>    
+      </select>
+      <legend>Where did you place the order? (required)</legend>
+        <label for="home"><input id="home" type="radio" name="order" value="0" class="inline" checked /> Home</label>
+        <label for="work"><input id="work" type="radio" name="order" value="1" class="inline" /> Work</label>
+      <legend>What are your favorite pizzas (you can choose several)</legend>
+        <label><input type="checkbox" value="1" class="inline">Mozzarella</label>
+        <label><input type="checkbox" value="2" class="inline">Fugazzetta</label>
+        <label><input type="checkbox" value="3" class="inline">Pepperoni</label>
+        <label><input type="checkbox" value="4" class="inline">Six Cheeses</label>
+        <label><input type="checkbox" value="5" class="inline">Carbonara</label>
+        <label><input type="checkbox" value="6" class="inline">Texas BBQ</label>
+        <label><input type="checkbox" value="7" class="inline">Barbecue</label>
+        <label><input type="checkbox" value="8" class="inline">Countryside</label>
+        <label><input type="checkbox" value="9" class="inline">Veggiña</label>
+        <label>Give us your opinion:<textarea rows="6" cols="30" placeholder="the pizza`s was..."></textarea></label>
+        <input id="submit" type="submit"/>
+    </form>
+  </body>
+</html>
